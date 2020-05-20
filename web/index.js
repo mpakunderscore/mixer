@@ -1,7 +1,4 @@
-let audio = new Audio('./audio_file.mp3');
-
 let track = () => {
-    // audio.play();
     document.getElementById('time').innerText = new Date().getTime()
 }
 
@@ -28,11 +25,11 @@ for (let i = 1; i <= 8; i++) {
     let note = document.getElementById('note' + i);
     let oscillator;
 
-    note.addEventListener("click", () => {
+    note.addEventListener("mousedown", () => {
         note.classList.add('active')
         oscillator = beep(20, 200 / i * 2, 30)
     }, true);
-    note.addEventListener("touchend", () => {
+    note.addEventListener("mouseup", () => {
         note.classList.remove('active')
         oscillator.stop()
     }, true);
