@@ -1,0 +1,105 @@
+#content {
+    /*position: relative;*/
+    /*overflow: scroll;*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    min-width: 150px;
+
+    z-index: 2;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#content #content-list {
+    overflow: scroll;
+}
+
+#content #content-list > div {
+    padding: 10px;
+    /*display: inline;*/
+}
+
+#content input {
+    padding: 10px;
+    margin-top: auto;
+}
+
+#content #content-list #main-text {
+    border-bottom: 1px solid var(--color-gray);
+}
+
+#content #content-list #main-image {
+    padding: 0;
+    max-height: 100px;
+    overflow: hidden;
+    /*align-items: center;*/
+}
+
+#content #content-list #main-image img {
+    width: 100%;
+}
+
+#content #content-list > div:not(.help-row):hover {
+    background-color: ghostwhite;
+}
+
+
+/*TODO*/
+#content .link span {
+    cursor: pointer;
+    /*padding-left: 5px;*/
+}
+
+#content .link span:hover {
+    opacity: .5;
+}
+
+#content .recommended a {
+    color: var(--color-green-dark)
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /*flex-direction: row;*/
+    /*background-color: rgba(255, 0, 0, 0.24);*/
+    /*box-sizing: border-box;*/
+    /*overflow: scroll;*/
+
+    box-sizing: border-box;
+}
+
+.link a {
+
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    /*overflow: hidden;*/
+
+    /*box-sizing: border-box;*/
+}
+
+#content-head {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    padding: 10px;
+
+    background: rgba(22, 185, 231, 0.1);
+    cursor: pointer;
+}
+
+#content-head.active {
+    background: var(--color-blue);
+}

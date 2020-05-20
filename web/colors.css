@@ -1,0 +1,28 @@
+html {
+
+    --color-white: white;
+    --color-gray: #bfbfbf;
+    --color-gray-dark: #777;
+
+    --color-purple: #e21fd8;
+    --color-purple-dark: rgba(154, 32, 166, 0.78);
+
+    --color-blue: #16b9e7;
+    --color-blue-dark: #0e7d9c;
+
+    --color-green: #00e200;
+    --color-green-dark: #007200;
+
+    --color-yellow: #e2e12c;
+    --color-yellow-dark: #717212;
+
+    --color-orange: #e2b152;
+    --color-orange-dark: #725936;
+
+    --color-red: rgba(231, 33, 4, 0.51);
+    --color-red-dark: #c00715;
+
+    --color-black: black;
+
+    --time-delay-main: .2;
+}

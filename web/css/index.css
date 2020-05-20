@@ -1,0 +1,171 @@
+html, body {
+    margin: 0;
+
+    --line-height: 16px;
+
+    --font-size-main: 12px;
+    --font-size-small: 12px;
+
+    /*color: red;*/
+
+    --color-black: black;
+
+    --color-blue: #16b9e7;
+    --color-blue-dark: #0e7d9c;
+
+    --color-green: #00e200;
+    --color-green-dark: #007200;
+
+    /*--color-purple: #e21fd8;*/
+    /*--color-purple-dark: rgba(154, 32, 166, 0.78);*/
+
+    --color-yellow: #e2e12c;
+    --color-yellow-dark: #717212;
+
+    --color-orange: #e2b152;
+    --color-orange-dark: #725936;
+
+    --color-red: rgba(231, 33, 4, 0.51);
+    --color-red-dark: #c00715;
+
+    --color-white: white;
+    --color-gray: #bfbfbf;
+    --color-gray-dark: #777;
+
+    --time-delay-main: .2;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-size-main);
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-blue-dark)
+}
+
+a:visited {
+    color: var(--color-gray)
+}
+
+div {
+    line-height: var(--line-height);
+}
+
+/*TODO move*/
+#top-menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    z-index: 2;
+}
+
+#top-menu span {
+    margin: 0 5px;
+}
+
+#top-menu div:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+/*TODO button class*/
+span.button {
+    margin: 0 5px;
+}
+
+label.button {
+    cursor: pointer;
+    color: var(--color-gray)
+}
+
+span.button.simple {
+    margin: 0;
+}
+
+span.text {
+    color: #adadad;
+}
+
+span.button:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+/*TODO temp*/
+#user-menu {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+
+    color: #adadad;
+}
+
+#user-menu div {
+    padding-right: 10px;
+}
+
+/*TODO temp*/
+.info {
+    background: var(--color-blue);
+}
+.warning {
+    background: var(--color-red);
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+
+/*#design {*/
+/*    width: 0;*/
+/*    height: 100%;*/
+
+/*    !*background-color: var(--color-blue);*!*/
+/*}*/
+
+/*#design div {*/
+/*    !*position: relative;*!*/
+/*    padding-top: 100px;*/
+/*    width: 100px;*/
+/*    height: 100%;*/
+/*    background-color: var(--color-blue);*/
+/*    transform: rotate(15deg);*/
+
+/*    z-index: 1;*/
+/*}*/
+
+/*#design div:last-child {*/
+/*    padding-top: 0;*/
+/*    background-color: var(--color-red-dark);*/
+/*    transform: rotate(15deg);*/
+/*}*/
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}

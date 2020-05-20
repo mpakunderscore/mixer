@@ -1,0 +1,177 @@
+html, body {
+    margin: 0;
+
+    --font-size-big: 20px;
+    --font-size-main: 16px;
+    --font-size-small: 12px;
+
+    --line-height: 16px;
+
+    --border-color: gray;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-size-big);
+
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+/*main > div {*/
+/*    width: 100%;*/
+/*    height: 10%;*/
+/*}*/
+
+/*main div#notes {*/
+/*    height: 80%;*/
+/*}*/
+
+/*main div#notes > div.note {*/
+/*    height: 12.5%;*/
+/*    text-align: center;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*div#instruments > div {*/
+/*}*/
+
+/*div#instruments > div:hover {*/
+/*    background-color: #16b9e7;*/
+/*}*/
+
+/*div#instruments {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    overflow: scroll;*/
+/*}*/
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10%;
+
+    background-color: #16b9e7;
+}
+
+#controls div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+}
+
+#controls div:hover {
+    background-color: #7ba07b;
+    cursor: pointer;
+}
+
+#notes {
+    height: 80%;
+}
+
+#notes div {
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    height: 12.5%;
+}
+
+#notes div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#notes div.active {
+    background-color: #9e7e92;
+}
+
+#instruments {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    /*height: 5%;*/
+
+    overflow: scroll;
+
+    background-color: #f6beff;
+}
+
+#instruments div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+
+#instruments div:hover {
+    background-color: #b2e8b2;
+    cursor: pointer;
+}
+
+#info {
+    width: 100%;
+    height: 5%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+#info div {
+    width: 50%;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+}
+
+#time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#metronome {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#metronome.active {
+    background-color: rgba(0, 255, 144, 0.4);
+}

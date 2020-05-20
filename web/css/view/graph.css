@@ -1,0 +1,120 @@
+#graph {
+    background-color: #e6e6ed;
+    /*background-color: rgba(91, 237, 114, 0.5);*/
+    width: 100%;
+    overflow: hidden;
+    /*font-weight: 400;*/
+
+    /*animation-name: example;*/
+    /*animation-duration: 1s;*/
+}
+
+/*@keyframes example {*/
+/*    from {background-color: var(--color-blue);}*/
+/*    to {background-color: #e6e6ed;}*/
+/*}*/
+
+#graph-svg {
+    /*background-color: rgba(135, 206, 250, 0.45);*/
+}
+
+
+.scaled {
+    /*transform: scale(0.8); !* Equal to scaleX(0.7) scaleY(0.7) *!*/
+    /*background-color: pink;*/
+    -webkit-transform: scale(.66);
+    -webkit-transform-origin: 0 0;
+    /*width: 142%;*/
+}
+
+line {
+    pointer-events: none;
+    stroke: var(--color-gray-dark);
+    stroke-opacity: 0.1;
+}
+
+/*g {*/
+/*    background-color: red;*/
+/*    min-height: 100px;*/
+/*}*/
+
+circle {
+    fill: var(--color-white);
+    stroke: var(--color-gray);
+    stroke-width: 2px;
+}
+
+circle.active {
+    stroke: var(--color-green-dark);
+    fill: var(--color-green);
+    font-weight: 600;
+}
+
+circle.main {
+    stroke: var(--color-blue-dark);
+    fill: var(--color-blue);
+}
+
+circle:hover {
+    cursor: pointer;
+    stroke: var(--color-green-dark);
+    fill: var(--color-green);
+    transition: 1s fill;
+    /*font-weight: 600;*/
+}
+
+/*circle.main:hover {*/
+/*    cursor: pointer;*/
+/*    fill: var(--color-green);*/
+/*}*/
+
+circle.active:hover {
+    stroke: var(--color-yellow-dark);
+    fill: var(--color-yellow);
+}
+
+circle:hover + text {
+    fill-opacity: 1;
+    z-index: 2;
+}
+
+text {
+    position: relative;
+    fill: black;
+    fill-opacity: 0.4;
+    /*visibility: hidden;*/
+    pointer-events: none;
+    z-index: 1;
+
+    /*cursor: default;*/
+}
+
+text.active:hover {
+    fill-opacity: 0.6;
+    cursor: pointer;
+}
+
+text.main {
+    fill-opacity: 1;
+}
+
+text.active {
+    pointer-events: auto;
+    fill-opacity: 1;
+}
+
+text.button {
+    pointer-events: auto;
+    cursor: pointer;
+    fill-opacity: 0;
+    fill: var(--color-red-dark);
+}
+
+text.button.star {
+    fill: var(--color-yellow);
+}
+
+text.button:hover {
+    fill-opacity: 1;
+    cursor: pointer;
+}

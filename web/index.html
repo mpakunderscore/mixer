@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mixer</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <link rel="shortcut icon"
+          type="image/x-icon"
+          href="images/favicon.png"
+          id="favicon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+    <main class="noselect">
+
+        <div id="controls">
+            <div>Record</div>
+            <div>Play</div>
+            <div onclick="location.reload()">Fast</div>
+            <div onclick="document.body.requestFullscreen()">Slow</div>
+        </div>
+
+        <div id="notes">
+            <div id="note1">1</div>
+            <div id="note2">2</div>
+            <div id="note3">3</div>
+            <div id="note4">4</div>
+            <div id="note5">5</div>
+            <div id="note6">6</div>
+            <div id="note7">7</div>
+            <div id="note8">8</div>
+        </div>
+
+        <div id="instruments">
+            <div>ГССР</div>
+            <div>Тележка</div>
+            <div>Птица</div>
+            <div>Пианино</div>
+            <div>Сентезатор</div>
+        </div>
+
+        <div id="info">
+            <div id="time"></div>
+            <div id="metronome" onclick="metronomeChange()"></div>
+        </div>
+
+    </main>
+</body>
+
+<script src="index.js"></script>
+
+</html>
